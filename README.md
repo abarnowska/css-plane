@@ -26,8 +26,8 @@
 
 ## Acknowledgements
 - This project was inspired by Max, who pick an image to my project!
-- When creating the aircraft, the model for me was [_this drawing_] (https://www.pngegg.com/en/png-nwsqy)
+- When creating the aircraft, the model for me was [_this drawing_](https://www.pngegg.com/en/png-nwsqy)
 
 
 ## Contact
-Created by Angelika Barnowska-Nawara. [_Fell free to contact me!_] (angelika.barnowska@gmail.com)
+Created by Angelika Barnowska-Nawara. [_Fell free to contact me!_](angelika.barnowska@gmail.com)
