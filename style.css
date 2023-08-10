@@ -1,0 +1,418 @@
+:root {
+	--super-dark-color: #1f363d;
+	--dark-color: #40798c;
+	--main-color: #70a9a1;
+	--light-color: #9ec1a3;
+	--super-light-color: #cfe0c3;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.sky {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(175, 217, 242);
+	background: linear-gradient(
+		184deg,
+		rgba(175, 217, 242, 1) 18%,
+		rgba(55, 99, 225, 1) 65%
+	);
+	z-index: -99999;
+}
+
+.text {
+	position: absolute;
+	top: 20%;
+	font-size: 10rem;
+}
+
+.cloud {
+	position: absolute;
+	left: -10%;
+	width: 10em;
+	height: 5em;
+	border-radius: 30% 50%;
+	background-color: #fff;
+	filter: blur(50px);
+	z-index: -9998;
+	opacity: 0;
+}
+.cloud-1 {
+	top: 15%;
+	animation: cloud-moving 20s infinite;
+}
+
+.cloud-2 {
+	width: 20em;
+	height: 10em;
+	top: 80%;
+	animation: cloud-moving 20s 1s infinite;
+}
+
+.cloud-3 {
+	width: 35em;
+	height: 15em;
+	top: 40%;
+	animation: cloud-moving 20s 3s infinite;
+}
+
+.cloud-4 {
+	width: 15em;
+	height: 7em;
+	top: 25%;
+	animation: cloud-moving 20s 5s infinite;
+}
+.cloud-5 {
+	width: 20em;
+	height: 8em;
+	top: 40%;
+	animation: cloud-moving 20s 10s infinite;
+}
+.cloud-6 {
+	width: 10em;
+	height: 7em;
+	top: 60%;
+	animation: cloud-moving 20s 15s infinite;
+}
+.cloud-7 {
+	top: 35%;
+	animation: cloud-moving 20s 16s infinite;
+}
+.cloud-8 {
+	top: 45%;
+	animation: cloud-moving 20s 19s infinite;
+}
+
+.fuselage {
+	position: relative;
+	background-color: var(--light-color);
+	width: 20em;
+	height: 9.85em;
+	border-radius: 10% 20% 1000px 0;
+	animation: plane-moving 5s infinite;
+}
+
+.back-wing {
+	position: absolute;
+	top: 2em;
+	right: -5em;
+	background-color: var(--dark-color);
+	width: 8em;
+	height: 3em;
+	border-radius: 50%;
+	content: "";
+}
+
+.back-wing-2 {
+	position: absolute;
+	top: -6em;
+	right: -1.5em;
+	background-color: var(--dark-color);
+	width: 5em;
+	height: 10em;
+	border-radius: 50%;
+	content: "";
+	z-index: -1;
+}
+
+.window {
+	position: absolute;
+	width: 3em;
+	height: 3em;
+	border-radius: 0 0 50% 50%;
+	background-color: rgb(126, 126, 126);
+}
+
+.window-left {
+	left: 6em;
+}
+
+.window-right {
+	left: 11em;
+}
+
+.prow-dark {
+	position: absolute;
+	left: -4em;
+	width: 8em;
+	height: 10em;
+	border-radius: 50%;
+	background-color: var(--dark-color);
+}
+
+.prow-light {
+	position: absolute;
+	top: 1em;
+	left: -3em;
+	width: 6em;
+	height: 8em;
+	border-radius: 50%;
+	background-color: var(--super-light-color);
+}
+
+.propeller {
+	position: absolute;
+	top: 50%;
+	left: -1em;
+	height: 10em;
+	width: 2em;
+	border-radius: 50%;
+	background-color: var(--super-dark-color);
+	transform-origin: top;
+}
+
+.propeller-1 {
+	rotate: 0deg;
+	animation: propeller-1-moving 0.1s infinite;
+}
+
+.propeller-2 {
+	rotate: 120deg;
+	transform-origin: top;
+	animation: propeller-2-moving 0.1s infinite;
+}
+
+.propeller-3 {
+	rotate: 240deg;
+	transform-origin: top;
+	animation: propeller-3-moving 0.1s infinite;
+}
+
+.middle-propeller {
+	position: absolute;
+	top: 50%;
+	width: 2em;
+	height: 2em;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background-color: rgb(43, 43, 43);
+}
+.wing {
+	position: absolute;
+	left: -80%;
+	width: 45em;
+	height: 4em;
+	border-radius: 50% 50%;
+	background-color: var(--super-dark-color);
+	rotate: 6deg;
+}
+
+.wing::before {
+	position: absolute;
+	width: 45em;
+	height: 3.5em;
+	border-radius: 50% 50%;
+	background-color: #105f64;
+	content: "";
+}
+
+.wing-bottom {
+	bottom: -2em;
+	z-index: -100;
+}
+.wing-top {
+	top: -5em;
+}
+
+.line {
+	position: absolute;
+	top: -3em;
+	width: 0.5em;
+	height: 14em;
+	background-color: rgb(34, 34, 34);
+}
+
+.line-1 {
+	left: 15em;
+	rotate: 7deg;
+}
+
+.line-2 {
+	top: -1em;
+	left: 25em;
+	height: 12em;
+	rotate: 7deg;
+}
+
+.line-3 {
+	left: 20em;
+	height: 16em;
+	rotate: 45deg;
+}
+
+.line-4 {
+	left: 20em;
+	rotate: -35deg;
+	height: 15.5em;
+}
+
+.line-5 {
+	left: -10em;
+	top: -4em;
+	height: 12em;
+	rotate: 7deg;
+}
+
+.line-6 {
+	height: 12em;
+	rotate: 7deg;
+	z-index: -10;
+}
+
+.line-7 {
+	top: -4em;
+	left: -6em;
+	rotate: 45deg;
+	z-index: -10;
+}
+
+.line-8 {
+	top: -4.5em;
+	left: -4em;
+	rotate: -35deg;
+	z-index: -10;
+}
+
+.wheel {
+	position: absolute;
+	top: 11em;
+	width: 4em;
+	height: 6em;
+	border-radius: 50%;
+	background-color: #202020;
+	rotate: 10deg;
+}
+.wheel-left {
+	left: -7.5em;
+	z-index: -9000;
+}
+
+.wheel::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2em;
+	height: 3em;
+	border-radius: 50%;
+	background-color: #adadad;
+	content: "";
+}
+
+.wheel-right {
+	top: 13em;
+	left: 4em;
+}
+
+.wheel-holder {
+	position: absolute;
+	top: 7em;
+	width: 0.8em;
+	height: 8em;
+	rotate: -35deg;
+	background-color: #adadad;
+	z-index: -1000;
+}
+
+.wheel-holder-1 {
+	left: 2em;
+}
+
+.wheel-holder-2 {
+	left: -2em;
+	rotate: 55deg;
+}
+
+.wheel-holder-3 {
+	width: 0.5em;
+	top: 9em;
+	rotate: 100deg;
+}
+
+@keyframes propeller-1-moving {
+	0% {
+		rotate: 0deg;
+	}
+
+	100% {
+		rotate: 120deg;
+	}
+}
+
+@keyframes propeller-2-moving {
+	0% {
+		rotate: 120deg;
+	}
+
+	100% {
+		rotate: 240deg;
+	}
+}
+
+@keyframes propeller-3-moving {
+	0% {
+		rotate: 240deg;
+	}
+
+	100% {
+		rotate: 360deg;
+	}
+}
+
+@keyframes plane-moving {
+	0% {
+		top: 0;
+	}
+
+	20% {
+		top: 10%;
+	}
+
+	40% {
+		top: 20%;
+	}
+
+	60% {
+		top: 15%;
+	}
+
+	80% {
+		top: 5%;
+	}
+
+	90% {
+		top: -10%;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes cloud-moving {
+	from {
+		left: -10%;
+		opacity: 1;
+	}
+
+	to {
+		left: 100%;
+		opacity: 1;
+	}
+}
