@@ -30,4 +30,4 @@
 
 
 ## Contact
-Created by Angelika Barnowska-Nawara. [_Fell free to contact me!_](angelika.barnowska@gmail.com)
+Created by Angelika Barnowska-Nawara. Fell free to contact me! (angelika.barnowska@gmail.com)
