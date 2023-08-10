@@ -1,5 +1,5 @@
 # CSS Plane
-> Animated airplane created for fun and excercise. Inspired by Max (4 years old!) who really loves planes! ✈ 
+> Animated airplane created for fun and excercise. Inspired by Max (4 years old) who really loves planes! ✈ 
 > Live demo [_here_](https://abarnowska.github.io/css-plane/).
 
 ## Table of Contents
@@ -10,8 +10,8 @@
 * [Contact](#contact)
 
 ## General Information
-- I'm made this project to improve my HTML and CSS skills
-- Creating CSS Plane was a big fun for me!
+- I've made this project to improve my HTML and CSS skills
+- Creating CSS Plane was a great fun for me!
 
 
 ## Technologies Used
@@ -25,9 +25,9 @@
 
 
 ## Acknowledgements
-- This project was inspired by Max, who pick an image to my project!
-- When creating the aircraft, the model for me was [_this drawing_](https://www.pngegg.com/en/png-nwsqy)
+- This project was inspired by Max, who chose the image for my project!
+- When creating this aircraft, I based it on [_this drawing_](https://www.pngegg.com/en/png-nwsqy)
 
 
 ## Contact
-Created by Angelika Barnowska-Nawara. Fell free to contact me! (angelika.barnowska@gmail.com)
+Created by Angelika Barnowska-Nawara. Feel free to contact me! (angelika.barnowska@gmail.com)
