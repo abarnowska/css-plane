@@ -13,10 +13,12 @@
 }
 
 body {
+	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 100%;
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -418,5 +420,26 @@ body {
 	100% {
 		left: 100%;
 		opacity: 1;
+	}
+}
+
+@media (max-width: 900px) {
+	.fuselage {
+		transform: scale(.8);
+	}
+}
+@media (max-width: 700px) {
+	.fuselage {
+		transform: scale(.6);
+	}
+}
+@media (max-width: 500px) {
+	.fuselage {
+		transform: scale(.4);
+	}
+}
+@media (max-width: 400px) {
+	.fuselage {
+		transform: scale(.3);
 	}
 }
